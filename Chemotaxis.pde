@@ -36,7 +36,7 @@ class Chemotaxis
   void show()
   {
     noStroke();
-    fill(255);
+    fill(255,255,0);
     ellipse(x,y,20,20);
   }
 }
