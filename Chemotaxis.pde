@@ -1,8 +1,7 @@
-Chemotaxis[] colony;
+Chemotaxis[] colony= new Chemotaxis [99];
 
 void setup()
 {
-  colony = new Chemotaxis [99];
   size(300,300);
     for(int i=0; i<colony.length;i++)
   {
