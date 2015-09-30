@@ -1,12 +1,9 @@
-Chemotaxis[] colony = new Chemotaxis [99];
+Chemotaxis[] colony;
 
 void setup()
 {
+  colony = new Chemotaxis [99];
   size(300,300);
-  for(int i=0; i<colony.length; i++)
-  {
-   colony[i] = new Chemotaxis(); 
-  }  
 }
 
 void draw()
@@ -14,6 +11,7 @@ void draw()
   background(0);
   for(int i=0; i<colony.length;i++)
   {
+  colony[i] = new Chemotaxis(); 
     colony[i].move();
     colony[i].show();
   }
